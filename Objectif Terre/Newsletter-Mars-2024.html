@@ -9,76 +9,157 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Space+Grotesk:wght@300..700&display=swap");
       body {
-        margin: 0;
+        margin: auto;
+        max-width: 800px;
+        min-width: 300px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         padding: 0;
         min-height: 100vh;
         height: auto;
-        background-color: #DAB354;
         display: flex;
         flex-direction: column;
         font-family: "Lora", serif;
+        overflow-x: hidden;
       }
       #body {
+        background-color: #DAB354;
         width: 100%;
-        max-width: 800px;
       }
       h1 {
         color: #df2c1b;
-        font-size: 50px;
+        font-size: 70px;
         font-family: "Space Grotesk", sans-serif;
         text-shadow: 2px 2px 2px #df2b1bb7;
+        margin: 12rem 0 1rem 0; 
+        padding-left: 2rem;
       }
       h2 {
         color: #DF2C1B;
-        font-size: 22px;
+        font-size: 30px;
         font-family: "Space Grotesk", sans-serif;
+        text-shadow: 2px 2px 2px #df2b1bb7;
       }
       p {
         font-family: "Lora", serif;
-        font-size: 13px;
+        font-size: 16px;
         line-height: 1.5;
       }
       .header {
-        margin-left: 2rem;
-        width: 240px;
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        overflow-x: hidden;
       }
       .mid-container {
-        margin-left: 2rem;
-        width: 440px;
+        width: 100%;
+        display: flex;
+        overflow-x: hidden;
+      }
+      .mid-container .mid-txt-container {
+        width: 50%;
+        margin-bottom: 8rem; padding-left: 2rem; padding-right: 2rem;
+      }
+      .mid-container .mid-img-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow-x: hidden;
+        padding-top: 17rem;
+        transform: translateX(6rem);
       }
       .bottom-container {
-        margin-left: 2rem;
+        width: auto;
+        margin-top: -2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        overflow-x: hidden;
+      }
+      @media (max-width: 450px) {
+        h1 {
+            font-size: 60px;
+            margin-top: 2rem;
+        }
+        .header {
+            display: block;
+        };
+        .header img {
+            
+        }
+        .header.title-text {
+            
+        }
+        .postes-img {
+            width: 87vw;
+        }
+        .mid-container {
+            width: auto;
+            flex-direction: column;
+            padding-right: 2rem;
+        }
+        .mid-container .mid-txt-container {
+            width: auto;
+            padding-left: 1rem;
+            padding-right: 0.5rem;
+          }
+        .mid-container .mid-img-container {
+            padding-top: 0;
+            transform: translateX(6rem) translateY(-7rem);
+        }
+        .bottom-container {
+            margin-top: -7rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+          }
+      }
+      @media only screen and (max-width: 480px) {
+        /* Seus estilos aqui */
       }
     </style>
     <section id="body">
       <div class="header">
-        <h1 style="margin: 10rem 0 1rem 0;">
+        <img src="HeaderLogo.png" alt="Objectif Terre Logo with circle">
+        <div class="title-text">
+            <h1>
           Objectif <br />
           Terre
-        </h1>
-        <p style="color:#D35727; font-weight: bold;">
-          C'est avec une énergie renouvelée que nous vous annonçons que
-          l'édition d'Objectif Terre prend un nouveau cap et se dirige vers 2025
-          ! Anticipez une aventure spectaculaire, débordant d'innovations et de
-          surprises éco-friendly. Préparez-vous à explorer un festival où chaque
-          recoin est une porte ouverte vers des différentes perspectives
-          écologiques.
-        </p>
+            </h1>
+            <p style="color:#D35727; font-size: 18px;font-weight: bold; width: 85%; padding-left: 2rem; padding-right: 2rem;">
+            C'est avec une énergie renouvelée que nous vous annonçons que
+            l'édition d'Objectif Terre prend un nouveau cap et se dirige vers 2025
+            ! Anticipez une aventure spectaculaire, débordant d'innovations et de
+            surprises éco-friendly. Préparez-vous à explorer un festival où chaque
+            recoin est une porte ouverte vers des différentes perspectives
+            écologiques.
         </div>
+      </div>
+        <img src="camera.png" alt="hand holding camera">
         <div class="mid-container">
-            <h2>Nouveaux postes à pourvoir!</h2>
-            <p style="color:#D35727; font-weight: bold;">Rejoignez notre équipe de visionnaires écologiques pour préparer l'édition 2025 ! </p>
+            <div class="mid-txt-container">
+                <img class="postes-img" src="nouveau.png" alt="Nouveaux postes img">
+                <h2>Nouveaux postes à pourvoir!</h2>
+                <p style="color:#D35727; font-weight: bold;">Rejoignez notre équipe de visionnaires écologiques pour préparer l'édition 2025 ! </p>
 
-            <p style="color:#D35727; font-weight: bold;">C'est l'occasion idéale pour vous engager dans une atmosphère décontractée, entouré·e·s d'une super équipe. 
-                    Devenez acteur·ice·s de la transition écologique - aucune expérience préalable n'est nécessaire. Les postes disponibles sont les suivants :</p>
-            <ul style="color:#D35727;">
-                <li><strong>Responsable Infrastructure :</strong> Vous êtes l'architecte du futur ! Préparez le terrain pour une expérience immersive en harmonie avec la nature et donnez-nous un avant-goût de ce que sera le festival de demain.</li>
-                <li><strong>Responsable RH :</strong> Vous êtes le ou la maestro·maestra du recrutement ! Façonnez l'équipe qui fera briller le festival et propulsez-la vers de nouveaux sommets. Prêt·e à relever le défi ?</li>
-                <li><strong>Responsable Propreté :</strong> Vous êtes le gardien ou la gardienne de la propreté ! Assurez-vous que le festival laisse une empreinte écologique minimale grâce à des pratiques innovantes et respectueuses de l'environnement.</li>
-                <li><strong>Responsable F&B :</strong> Vous êtes le ou la chef d'orchestre du festival des saveurs ! En tant que coordinateur ou coordinatrice F&B, vous jonglez entre les départements du bar, du réapprovisionnement, des consignes et des stands food pour créer une expérience gastronomique inoubliable. Prêt·e à mettre en place une symphonie de délices pour nos festivaliers ?</li>
-                <li><strong>Responsable Cuisine :</strong> Vous êtes le ou la magicien·ne des cuisines ! En tant que responsable cuisine, vous travaillez en étroite collaboration avec le chef pour estimer les bonnes quantités, superviser la récupération des dons alimentaires et veiller à ce que chaque plat soit une explosion de saveurs. Êtes-vous prêt·e à régaler nos visiteurs avec vos talents culinaires ?</li>
-            </ul>
-            <p style="color:#D35727; font-size: 15px; font-weight: bold;">Envie de contribuer autrement? Que ce soit en Communication, Artistique, Contenu, Financement, Santé et sécurité, votre passion est la bienvenue. Écrivez-nous à <a style="color:#DF2C1B; font-size: 15px; font-weight: bold;" href="email:staff@objectifterre.ch">staff@objectifterre.ch</a> pour faire partie de l’aventure.</p>
+                <p style="color:#D35727; font-weight: bold;">C'est l'occasion idéale pour vous engager dans une atmosphère décontractée, entouré·e·s d'une super équipe. 
+                    Devenez acteur·ice·s de la transition écologique - aucune expérience préalable n'est nécessaire. Les postes disponibles sont les suivants:</p>
+                <ul style="color:#D35727;">
+                    <li><strong>Responsable Infrastructure :</strong> Vous êtes l'architecte du futur ! Préparez le terrain pour une expérience immersive en harmonie avec la nature et donnez-nous un avant-goût de ce que sera le festival de demain.</li>
+                    <li><strong>Responsable RH :</strong> Vous êtes le ou la maestro·maestra du recrutement ! Façonnez l'équipe qui fera briller le festival et propulsez-la vers de nouveaux sommets. Prêt·e à relever le défi ?</li>
+                    <li><strong>Responsable Propreté :</strong> Vous êtes le gardien ou la gardienne de la propreté ! Assurez-vous que le festival laisse une empreinte écologique minimale grâce à des pratiques innovantes et respectueuses de l'environnement.</li>
+                    <li><strong>Responsable F&B :</strong> Vous êtes le ou la chef d'orchestre du festival des saveurs ! En tant que coordinateur ou coordinatrice F&B, vous jonglez entre les départements du bar, du réapprovisionnement, des consignes et des stands food pour créer une expérience gastronomique inoubliable. Prêt·e à mettre en place une symphonie de délices pour nos festivaliers ?</li>
+                    <li><strong>Responsable Cuisine :</strong> Vous êtes le ou la magicien·ne des cuisines ! En tant que responsable cuisine, vous travaillez en étroite collaboration avec le chef pour estimer les bonnes quantités, superviser la récupération des dons alimentaires et veiller à ce que chaque plat soit une explosion de saveurs. Êtes-vous prêt·e à régaler nos visiteurs avec vos talents culinaires ?</li>
+                </ul>
+                <p style="color:#D35727; font-weight: bold;">Envie de contribuer autrement? Que ce soit en Communication, Artistique, Contenu, Financement, Santé et sécurité, votre passion est la bienvenue. Écrivez-nous à <a style="color:#DF2C1B; font-weight: bold;" href="email:staff@objectifterre.ch"  target="_blank">staff@objectifterre.ch</a> pour faire partie de l’aventure.</p>
+            </div>
+            <div class="mid-img-container">
+                <img src="midcontainerimg.png" alt="circle with waves">
+                <img src="midcontainerimg2.png" alt="circle with red leafs">
+            </div>
         </div>
         <div class="bottom-container">
             <h3 style="color:#257D65;">Agenda :</h3>
@@ -86,10 +167,11 @@
                 <li><strong>Festival du Film Vert :</strong> Du 2 mars au 14 avril, dans 90 endroits différents en Suisse romande, en France, au Tessin et dans quelques villes africaines.</li>
                 <li><strong>Semaine de la Durabilité par Après-VD :</strong> Du 4 au 8 mars, engageons-nous ensemble pour un futur durable.</li>
                 <li><strong>Festival des Futurs Désirables par Unipoly :</strong>Le 6 mars, un carrefour d’idées pour construire demain.</li>
-                <li><strong>Objectif Climat par Green Peace Vaud :</strong>Plus d’infos sur Objectifclimat.ch.</li>
-                <li><strong>Nouveau tronçon ferroviaire :</strong>Une initiative des Grands-Parents pour le Climat et l’ATE pour une mobilité douce. Détails sur trains-ouest.ch.</li>
+                <li><strong>Objectif Climat par Green Peace Vaud :</strong>Plus d’infos sur <a style="color:#257D65;" href="https://objectifclimat.ch" target="_blank">Objectifclimat.ch</a>.</li>
+                <li><strong>Nouveau tronçon ferroviaire :</strong>Une initiative des Grands-Parents pour le Climat et l’ATE pour une mobilité douce. Détails sur <a style="color:#257D65;" href="https://trains-ouest.ch" target="_blank">trains-ouest.ch</a>.</li>
             </ul>
         </div>
+        <a href="https://objectifterre.ch/" target="_blank"><img style="width: 100%; height: auto; object-fit: fill; margin-top: 2rem" src="footer.png" alt=""></a>
       </div>
     </section>
   </body>
