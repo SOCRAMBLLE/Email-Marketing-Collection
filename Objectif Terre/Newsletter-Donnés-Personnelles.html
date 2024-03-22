@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
     <title>Document</title>
   </head>
   <body>
@@ -30,12 +31,13 @@
         width: 100%;
         height: auto;
         margin: 0;
-      }
-      main#body .background--image {
-        width: 100%;
+        background-image: url("https://ik.imagekit.io/ftcconstru/Obj%20Terre/Sem%20nome%20(1080%20x%202500%20px).png?updatedAt=1711045114622");
+        background-size: cover;
+        background-position: center center;
+        padding-top: calc(945 / 2188 * 100%);
       }
       main#body .body--text-container {
-        position: absolute;
+        position: relative;
         width: 100%;
         height: 100%;
         padding: 500px 0;
@@ -105,9 +107,15 @@
         justify-content: center;
         gap: 0.3rem;
       }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: white;
+          color: black;
+        }
+      }
       @media (max-width: 730px) {
         main#body .body--text-container {
-          padding-top: 8rem;
+          padding-top: 17rem;
         }
         main#body .body--text-container .body--text {
           margin: auto 4rem;
@@ -200,11 +208,6 @@
           <i>L'équipe d'Objectif Terre</i>
         </div>
       </div>
-
-      <img
-        class="background--image"
-        src="https://ik.imagekit.io/ftcconstru/Obj%20Terre/Sem%20nome%20(1080%20x%202500%20px).png?updatedAt=1711045114622"
-      />
     </main>
     <div class="obj-terre--logo-cointainer">
       <a href="https://objectifterre.ch" target="_blank" rel="noreferer">
