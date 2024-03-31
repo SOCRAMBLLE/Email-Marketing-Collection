@@ -5,63 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="light" />
     <title>Document</title>
-  </head>
-  <body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Space+Grotesk:wght@300..700&display=swap");
-      body {
-        margin: auto;
-        max-width: 800px;
-        min-width: 300px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        min-height: 100vh;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        font-family: "Lora", serif;
-        overflow-x: hidden;
-      }
-      main#body {
-        position: relative;
-        width: 100%;
-        height: auto;
-        margin: 0;
-        background-image: url("https://ik.imagekit.io/ftcconstru/Obj%20Terre/Sem%20nome%20(1080%20x%202500%20px).png?updatedAt=1711045114622");
-        background-size: cover;
-        background-position: center center;
-        padding-top: calc(945 / 2188 * 100%);
-      }
-      main#body .body--text-container {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        padding: 500px 0;
-      }
-      main#body .body--text-container .body--text {
-        margin: auto 5rem;
-        border-radius: 1rem;
-        padding: 1rem 3rem 4rem;
-        background-color: #f8693f;
-        line-height: 38px;
-        text-align: justify;
-        -webkit-box-shadow: 0px 0px 26px 3px rgba(0, 0, 0, 0.78);
-        -moz-box-shadow: 0px 0px 26px 3px rgba(0, 0, 0, 0.78);
-        box-shadow: 0px 0px 26px 3px rgba(0, 0, 0, 0.78);
-      }
-      main#body .body--text-container .body--text h1 {
-        width: 100%;
-        margin: 2rem 0 3rem;
-        font-family: "Lora", serif;
-        text-align: center;
-      }
-      main#body .body--text-container .body--text p {
-        font-weight: 500;
-      }
       .text--unsub-button {
         width: 100%;
         display: flex;
@@ -107,74 +55,107 @@
         justify-content: center;
         gap: 0.3rem;
       }
+      @media (max-width: 700px) {
+        main#body .body--text-container {
+          padding-top: 35rem;
+        }
+        main#body .body--text-container .body--text {
+          margin: auto 4rem;
+        }
+        main#body {
+          padding-top: calc(245 / 1888 * 100%);
+        }
+      }
+      @media (max-width: 600px) {
+        main#body .body--text-container {
+          padding-top: 35rem;
+        }
+        main#body .body--text-container .body--text {
+          margin: auto 2rem;
+        }
+        main#body {
+          padding-top: calc(145 / 988 * 100%);
+        }
+      }
+      @media (max-width: 400px) {
+        main#body .body--text-container {
+          padding-top: 7rem;
+        }
+        main#body .body--text-container .body--text {
+          margin: auto 0.5rem;
+        }
+        main#body {
+          padding-top: calc(55 / 188 * 100%);
+        }
+      }
       @media (prefers-color-scheme: dark) {
         body {
           background-color: white;
           color: black;
         }
       }
-      @media (max-width: 730px) {
-        main#body .body--text-container {
-          padding-top: 17rem;
-        }
-        main#body .body--text-container .body--text {
-          margin: auto 4rem;
-        }
-      }
-      @media (max-width: 650px) {
-        main#body .body--text-container .body--text {
-          margin: auto 2rem;
-        }
-      }
-      @media (max-width: 600px) {
-        main#body .body--text-container .body--text {
-          margin: auto 1rem;
-          line-height: 4vw;
-        }
-        main#body .body--text-container .body--text h1 {
-          line-height: 7vw;
-        }
-      }
-      @media (max-width: 480px) {
-        main#body .body--text-container .body--text {
-          padding: 1.3rem 1rem 2rem;
-        }
-        main#body .body--text-container .body--text h1 {
-          margin: 1rem 0 2rem;
-          font-size: 7vw;
-        }
-        main#body .body--text-container .body--text p {
-          font-size: 3vw;
-        }
-        .text--unsub-button a button {
-          padding: 0.8em;
-          padding-left: 2em;
-          padding-right: 2em;
-        }
-      }
-      @media (max-width: 365px) {
-        main#body {
-          height: 750px;
-        }
-        main#body .body--text-container {
-          padding-top: 0;
-        }
-        main#body .body--text-container .body--text {
-          margin: 2rem 1rem;
-        }
-        main#body .background--image {
-          height: 100%;
-        }
-      }
     </style>
-    <main id="body">
-      <div class="body--text-container">
-        <div class="body--text">
-          <h1>
-            Salut à toi, ami.e.x<br />
-            d’Objectif Terre!
+  </head>
+  <body
+    style="
+      margin: auto;
+      max-width: 800px;
+      min-width: 300px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      min-height: 100vh;
+      height: auto;
+      font-family: 'Lora', serif;
+      overflow-x: hidden;
+      background-color: white;
+      color: black;
+    "
+  >
+    <main
+      id="body"
+      style="
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        background-image: url('https://ik.imagekit.io/ftcconstru/Obj%20Terre/Sem%20nome%20(1080%20x%202500%20px).png?updatedAt=1711045114622');
+        background-size: cover;
+        background-position: center center;
+        padding-top: calc(545 / 2188 * 100%);
+      "
+    >
+      <div
+        class="body--text-container"
+        style="position: relative; width: 100%; height: 100%; padding: 500px 0"
+      >
+        <div
+          class="body--text"
+          style="
+            margin: auto 5rem;
+            border-radius: 1rem;
+            padding: 1rem 3rem 4rem;
+            background-color: #f8693f;
+            line-height: 38px;
+            text-align: justify;
+            box-shadow: 0px 0px 26px 3px rgba(0, 0, 0, 0.78);
+          "
+        >
+          <h1
+            style="
+              width: 100%;
+              margin: 2rem 0 3rem;
+              font-family: 'Lora', serif;
+              text-align: center;
+              line-height: 9vw;
+            "
+          >
+            Salut à toi, ami.e.x<br />d’Objectif Terre!
           </h1>
-          <p>
+          <p style="font-weight: 500">
             Tu nous as rejoint.e.x sur notre liste de diffusion il y a un temps,
             et ensemble, nous avons cultivé des valeurs profondes telles que la
             durabilité, le respect, la solidarité et le partage. Ton soutien
@@ -192,13 +173,41 @@
             suffit de cliquer sur ce bouton ci-dessous. Ton choix sera respecté
             et tes données supprimées de notre liste.
           </p>
-          <div class="text--unsub-button">
+          <div
+            style="
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+          >
             <a
               href="https://newsletters.objectifterre.ch/lists/zs024ckrqh2e9/unsubscribe/"
               target="_blank"
               rel="noreferer"
-              ><button>Clique ici pour une pause digitale</button></a
             >
+              <button
+                style="
+                  margin: 2rem 0;
+                  outline: none;
+                  color: #f8693f;
+                  font-family: 'Space Grotesk', sans-serif;
+                  font-weight: 600;
+                  padding: 1em;
+                  padding-left: 3em;
+                  padding-right: 3em;
+                  border: 2px dashed #f8693f;
+                  border-radius: 15px;
+                  background-color: #eaddca;
+                  box-shadow: 0 0 0 4px #eaddca,
+                    2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+                  transition: 0.1s ease-in-out, 0.4s color;
+                  cursor: pointer;
+                "
+              >
+                Clique ici pour une pause digitale
+              </button>
+            </a>
           </div>
           <p>
             Merci de ton engagement passé, présent, et futur. On continue
@@ -209,28 +218,51 @@
         </div>
       </div>
     </main>
-    <div class="obj-terre--logo-cointainer">
+    <div
+      style="
+        z-index: 2;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+      "
+    >
       <a href="https://objectifterre.ch" target="_blank" rel="noreferer">
         <img
           class="obj-terre--logo"
           src="https://ik.imagekit.io/ftcconstru/Obj%20Terre/logo-OT-v2_noir-fond-transparent%20(2).png?updatedAt=1711043838824"
+          style="width: 150px"
         />
       </a>
     </div>
-    <footer>
+    <footer
+      style="
+        z-index: 2;
+        width: 100%;
+        padding-bottom: 1rem;
+        background-color: #f8693f;
+      "
+    >
       <p style="text-align: center">
         Droits d'auteur © 2024 Objectif Terre, Tous droits réservés.
       </p>
-
       <p style="text-align: center"><strong>Notre email adress est:</strong></p>
-
       <p style="text-align: center">
         1000 Lausanne,<br />
-        <a style="color: black" href="mailto:info@objectifterre.ch"
+        <a href="mailto:info@objectifterre.ch" style="color: black"
           >info@objectifterre.ch</a
         >
       </p>
-      <div class="social-media--icons">
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.3rem;
+        "
+        class="social-media--icons"
+      >
         <a
           href="https://www.facebook.com/ObjectifTerre.ch/"
           target="_blank"
@@ -294,7 +326,6 @@
         ></a>
       </div>
       <p style="text-align: center">Envie de changer vos préférences ?</p>
-
       <p style="text-align: center">
         Vous pouvez
         <a
